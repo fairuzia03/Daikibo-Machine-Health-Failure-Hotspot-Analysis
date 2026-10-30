@@ -146,7 +146,7 @@ After the first version answered the questions, I rebuilt the layout around a Z-
 
 | First version | Final version |
 |:---:|:---:|
-| ![Before](images/02-dashboard-before..png) | ![After](images/01-dashboard-final.png) |
+| ![Before](images/02-dashboard-before.png) | ![After](images/01-dashboard-final.png) |
 
 The first version put two charts on a page. The final version tells the viewer the answer first and lets them verify it in the charts second.
 
@@ -231,11 +231,11 @@ Company-wide LaserWelder downtime is also 480 minutes, which equals Seiko's tota
 
 In the future, if I extended this project, I would do these steps, such as :
 
-1. **Add a time dimension.** Use `Timestamp` to look at downtime by day and hour, and test whether failures cluster in particular shifts or dates.
+1. **Add a time dimension :** Use `Timestamp` to look at downtime by day and hour, and test whether failures cluster in particular shifts or dates.
 2. **Drill down to individual devices.** Use `Device ID` to see whether Seiko's LaserWelder downtime comes from one faulty unit or all of them.
-3. **Test the temperature link.** Explore whether `Temperature` readings differ between healthy and unhealthy messages. Since during the analysis being done for this project, I didn't include observing or analyzing the temperature data.
-4. **Compute reliability metrics.** Add downtime rate (percentage of messages that are unhealthy) so sites with different volumes can be compared fairly.
-5. **Build a simple predictive model.** Explore whether temperature and recent status can flag a machine before it becomes unhealthy.
+3. **Test the temperature link :** Explore whether `Temperature` readings differ between healthy and unhealthy messages. Since during the analysis being done for this project, I didn't include observing or analyzing the temperature data.
+4. **Compute reliability metrics :** Add downtime rate (percentage of messages that are unhealthy) so sites with different volumes can be compared fairly.
+5. **Build a simple predictive model :** Explore whether temperature and recent status can flag a machine before it becomes unhealthy.
 
 ## 10. What I Learned
 
