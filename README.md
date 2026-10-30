@@ -151,7 +151,7 @@ The first version put two charts on a page. The final version tells the viewer t
 
 ### Z-pattern reading flow
 
-![Z-pattern wireframe](images/03-z-pattern-wireframe.png)
+Here are the details of the Z-pattern reading flow aplied to the final design of the interactive dashboard.
 
 | Point | Position | Content |
 |:---:|:---|:---|
