@@ -4,7 +4,7 @@ An interactive Tableau dashboard that finds **where machines break down most** a
 
 ![Final dashboard](images/01-dashboard-final.png)
 
-**[View the live interactive dashboard on Tableau Public](YOUR_TABLEAU_PUBLIC_LINK)**
+**[View the live interactive dashboard on Tableau Public](https://public.tableau.com/views/DaikiboMachineHealthFailureHotspotAnalysis/DashboardSidebySide)**
 
 ![Tool](https://img.shields.io/badge/Tool-Tableau-1F77B4) ![Data](https://img.shields.io/badge/Data-IoT%20Telemetry%20(JSON)-lightgrey) ![Type](https://img.shields.io/badge/Type-Exploratory%20Analysis-86BC25) ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
