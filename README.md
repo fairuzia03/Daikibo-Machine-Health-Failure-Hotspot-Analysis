@@ -103,7 +103,7 @@ The main goal of this project was to turn the raw telemetry data into a dashboar
 ### Step 1: Import the JSON data
 Imported the telemetry file into Tableau with **all schema levels selected**, so that the nested fields were flattened into usable columns.
 
-![Data import](images/04-data-import-schema.png)
+![Data import](images/03-data-import-schema.png)
 
 ### Step 2: Create the "Unhealthy" calculated measure
 Each unhealthy status message represents **10 minutes of potential downtime** since the previous message (messages arrive every 10 minutes).
@@ -113,23 +113,23 @@ IF[Status]="unhealthy" THEN 10 ELSE 0 END
 
 Summing this measure gives estimated downtime in minutes: **1,030 minutes = 103 unhealthy messages x 10 min**.
 
-![Calculated field](images/05-calculated-field-unhealthy.png)
+![Calculated field](images/04-calculated-field-unhealthy.png)
 
 ### Step 3: Build "Down Time per Factory"
 A bar chart of `SUM(Unhealthy)` by `Factory`, with data labels, to answer question 1.
 
-![Down Time per Factory](images/06-sheet-downtime-per-factory.png)
+![Down Time per Factory](images/05-sheet-downtime-per-factory.png)
 
 ### Step 4: Build "Down Time per Device/Machine Type"
 A bar chart of `SUM(Unhealthy)` by `Machine Type`, to answer question 2.
 
-![Down Time per Machine Type](images/07-sheet-downtime-per-machine.png)
+![Down Time per Machine Type](images/06-sheet-downtime-per-machine.png)
 
 ### Step 5: Combine into a dashboard with an interactive filter
 Placed both sheets on one dashboard and set the factory chart as a filter. Selecting a factory now shows only that factory's machine downtime.
 
 ![Dashboard action](images/08-dashboard-action-filter.png)
-![Dashboard action](images/08-dashboard-action-filter(1).png)
+![Dashboard action](images/07-dashboard-action-filter(1).png)
 
 ### Step 6: Select the worst factory and read the answer
 Clicking the Seiko bar filters the machine chart to Seiko only. Only one machine type shows downtime.
