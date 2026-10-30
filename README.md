@@ -173,7 +173,7 @@ The first version put two charts on a page. The final version tells the viewer t
 
 ## 6. Findings and Business Insights
 
-### Finding 1: Seiko is the downtime hotspot, and two sites dominate
+### 1. Seiko is the downtime hotspot, and two sites dominate
 
 | # | Factory | Downtime (min) | Share of total |
 |:---:|:---|:---:|:---:|
@@ -186,7 +186,7 @@ The first version put two charts on a page. The final version tells the viewer t
 - Seiko and Shenzhen together account for **900 of 1,030 minutes (87%)**.
 - Seiko's downtime is about **24x Berlin's** and **4.4x Meiyo's**.
 
-### Finding 2: Two machine types produce 88% of all downtime
+### 2. Two machine types produce 88% of all downtime
 
 | # | Machine type | Downtime (min) | Share of total |
 |:---:|:---|:---:|:---:|
@@ -200,51 +200,51 @@ The first version put two charts on a page. The final version tells the viewer t
 | 8 | MetalPress | 0 | 0% |
 | 9 | AirWrench | 0 | 0% |
 
-### Finding 3: At Seiko, the problem is one machine type
-With the Seiko bar selected, **LaserWelder shows 480 minutes and the other eight machine types show 0**. That means **100% of Seiko's downtime comes from LaserWelders**.
+### 3. At Seiko, the problem is one machine type
+When the Seiko bar selected, **LaserWelder shows 480 minutes and the other eight machine types show 0**. That means **100% of Seiko's downtime comes from LaserWelders machine**.
 
-### Finding 4: The LaserWelder problem is specific to Seiko
+### 4. The LaserWelder problem is specific to Seiko
 Company-wide LaserWelder downtime is also 480 minutes, which equals Seiko's total. So LaserWelders at Berlin, Meiyo, and Shenzhen recorded **0 minutes** of downtime. Since all four sites run the same 9 machine types, this points to a **Seiko-specific cause** (equipment batch, maintenance practice, operating conditions) rather than a design flaw in the machine type.
 
 ### Answers to the client's questions
 
-1. **Location with the most breakdowns:** Seiko (Osaka), 480 minutes (47% of total).
+1. **Location with the most breakdowns:** Seiko Factory (Osaka, Japan), 480 minutes (47% of total).
 2. **Machine that broke most often there:** LaserWelder, 480 minutes (100% of the site's downtime).
 
-## 7. Recommendations
+## 7. My Recommendations
 
-1. **Investigate Seiko's LaserWelders first.** Review maintenance logs, machine age, operating conditions, and operator procedures. This is the single biggest source of downtime at the single worst site, and it addresses **47%** of total recorded downtime.
+1. **Investigate Seiko's LaserWelders first.** Review maintenance logs, machine age, operating conditions, and operator procedures. This is the only biggest source of downtime at the single worst site, and it addresses **47%** of total recorded downtime.
 2. **Benchmark Seiko against the other three sites.** LaserWelders at the other sites recorded 0 minutes, so working practices that prevent downtime may already exist inside the company. This allows a faster fix by reusing internal best practice.
 3. **Investigate LaserCutter downtime, starting with Shenzhen.** LaserCutter accounts for 430 min (42%). [VERIFY: click the Shenzhen bar and confirm which machine drives its 420 minutes, then update this line.] Together with LaserWelder, this addresses **88%** of downtime.
-4. **Set up ongoing monitoring of the top two machine types.** Track downtime per machine type per site on a recurring dashboard, which turns a one-time analysis into an early-warning view.
-5. **Deprioritize low-impact machines.** MetalPress and AirWrench show 0 min, and SpotWelder, ConveyorBelt, and CNC show 10 min each, so maintenance effort should go where the downtime is.
+4. **Set up ongoing monitoring of the top two machine types.** Track downtime per machine type per site on a recurring dashboard, which turns a one-time analysis into an early-warning view to analyze their performance.
+5. **Deprioritize low-impact machines.** MetalPress and AirWrench show 0 minutes, and SpotWelder, ConveyorBelt, and CNC show 10 minutes each, so maintenance effort should go where the downtime is.
 
 ## 8. Assumptions and Limitations
 
 - **Downtime is an estimate.** Each unhealthy message is counted as 10 minutes, based on the 10-minute reporting interval. Real downtime could be shorter or longer.
-- **One month of data.** Seasonality, long-term trends, and recurring patterns cannot be assessed.
-- **Descriptive, not causal.** The data shows where and which, not why. Root-cause conclusions require maintenance records and engineering input.
-- **No predictive model.** This is an exploratory analysis, not a failure-prediction project.
-- **Simulated client.** The data comes from a job simulation, so conclusions illustrate method rather than real operations.
+- **One month of data.** This is a data obtained during a 1 month observation and not seasonal, long-term trends, and recurring patterns type of data.
+- **Descriptive, not causal.** The data shows where and which, and not why. The root-cause conclusions require maintenance records and engineering input.
+- **No predictive model.** This is an exploratory analysis, not a failure-prediction type of project.
+- **Simulated client.** The data comes from a job simulation, so conclusions illustrate method rather than real factory or manufacturing operations.
 
-## 9. Next Steps
+## 9. Next Steps for Improvements
 
-If I extended this project, I would:
+In the future, if I extended this project, I would do these steps, such as :
 
 1. **Add a time dimension.** Use `Timestamp` to look at downtime by day and hour, and test whether failures cluster in particular shifts or dates.
 2. **Drill down to individual devices.** Use `Device ID` to see whether Seiko's LaserWelder downtime comes from one faulty unit or all of them.
-3. **Test the temperature link.** Explore whether `Temperature` readings differ between healthy and unhealthy messages.
+3. **Test the temperature link.** Explore whether `Temperature` readings differ between healthy and unhealthy messages. Since during the analysis being done for this project, I didn't include observing or analyzing the temperature data.
 4. **Compute reliability metrics.** Add downtime rate (percentage of messages that are unhealthy) so sites with different volumes can be compared fairly.
 5. **Build a simple predictive model.** Explore whether temperature and recent status can flag a machine before it becomes unhealthy.
 
 ## 10. What I Learned
 
 - How to import nested JSON into Tableau and select the right schema levels
-- How to create calculated fields and use LOD expressions for share-of-total KPIs
+- How to create calculated fields and use LOD (Level of Detail) expressions for share-of-total KPIs
 - How to configure dashboard actions so a filter targets only the intended sheets
 - How to redesign a dashboard with a Z-pattern so viewers get the answer first and the evidence second
-- How floating and tiled objects, padding, and layering work, and why exact positioning keeps a dashboard stable
-- How to turn findings into prioritized, number-backed recommendations
+- How floating and tiled objects, padding, and layering work, and why exact positioning keeps a dashboard stable to be observed.
+- How to turn raw company dataset into useful business insights / findings and recommendations, as well as answering the client's questions as previously stated and explained in the beginning.
 
 ## 11. Repository Structure
 
@@ -270,7 +270,7 @@ Daikibo-Machine-Health-Failure-Hotspot-Analysis/
 
 ## 12. How to Explore This Project
 
-**Option A: Online (fastest)**
+**Option A: Explore Online**
 Open the [Tableau Public dashboard](YOUR_TABLEAU_PUBLIC_LINK) and click a factory bar to filter the machine chart.
 
 **Option B: Locally**
@@ -280,10 +280,10 @@ Open the [Tableau Public dashboard](YOUR_TABLEAU_PUBLIC_LINK) and click a factor
 
 ## 13. Acknowledgements
 
-This project was completed as part of the **Deloitte Australia Data Analytics job simulation** on [Forage](https://www.theforage.com/simulations/deloitte-au/data-analytics-s5zy). Daikibo is a fictional client created for the simulation. This repository is an independent portfolio project and is not affiliated with or endorsed by Deloitte or Forage.
+This project was completed as part of the **Deloitte Australia Data Analytics Job Simulation** on [Forage](https://www.theforage.com/simulations/deloitte-au/data-analytics-s5zy). Daikibo is a fictional client created for the simulation. This repository is an independent portfolio project and is not affiliated with or endorsed by Deloitte or Forage.
 
 ## 14. Contact
 
-**[YOUR NAME]**
+**Fairuzia Rahimanita**
 
-[LinkedIn](YOUR_LINKEDIN_URL) | [Email](mailto:YOUR_EMAIL) | [Tableau Public](YOUR_TABLEAU_PUBLIC_PROFILE)
+[LinkedIn](www.linkedin.com/in/fairuzia-rahimanita-0b8a62379) | [Email](mailto:zialuvs3@gmail.com) | [Tableau Public](https://public.tableau.com/app/profile/fairuzia.rahimanita/vizzes)
