@@ -76,7 +76,7 @@ The main goal of this project was to turn the raw telemetry data into a dashboar
 7. ConveyorBelt
 8. CNC
 9. AirWrench
-- **Rows:** [ADD ROW COUNT FROM TABLEAU]
+- **Rows:** 8,640
 
 **Key fields used**
 
