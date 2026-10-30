@@ -129,6 +129,7 @@ A bar chart of `SUM(Unhealthy)` by `Machine Type`, to answer question 2.
 Placed both sheets on one dashboard and set the factory chart as a filter. Selecting a factory now shows only that factory's machine downtime.
 
 ![Dashboard action](images/08-dashboard-action-filter.png)
+![Dashboard action](images/08-dashboard-action-filter(1).png)
 
 ### Step 6: Select the worst factory and read the answer
 Clicking the Seiko bar filters the machine chart to Seiko only. Only one machine type shows downtime.
