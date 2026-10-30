@@ -146,7 +146,7 @@ After the first version answered the questions, I rebuilt the layout around a Z-
 
 | First version | Final version |
 |:---:|:---:|
-| ![Before](images/02-dashboard-before.png) | ![After](images/01-dashboard-final.png) |
+| ![Before](images/02-dashboard-before..png) | ![After](images/01-dashboard-final.png) |
 
 The first version put two charts on a page. The final version tells the viewer the answer first and lets them verify it in the charts second.
 
