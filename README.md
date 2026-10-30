@@ -108,10 +108,8 @@ Imported the telemetry file into Tableau with **all schema levels selected**, so
 ### Step 2: Create the "Unhealthy" calculated measure
 Each unhealthy status message represents **10 minutes of potential downtime** since the previous message (messages arrive every 10 minutes).
 
-```
 // Replace with the exact formula used in the workbook
-IF [Status] = "unhealthy" THEN 10 ELSE 0 END
-```
+IF[Status]="unhealthy" THEN 10 ELSE 0 END
 
 Summing this measure gives estimated downtime in minutes: **1,030 minutes = 103 unhealthy messages x 10 min**.
 
