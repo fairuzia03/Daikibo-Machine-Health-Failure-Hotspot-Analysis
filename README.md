@@ -207,23 +207,23 @@ Company-wide LaserWelder downtime is also 480 minutes, which equals Seiko's tota
 
 ### Answers to the client's questions
 
-1. **Location with the most breakdowns:** Seiko Factory (Osaka, Japan), 480 minutes (47% of total).
-2. **Machine that broke most often there:** LaserWelder, 480 minutes (100% of the site's downtime).
+1. **Location with the most breakdowns :** Seiko Factory (Osaka, Japan), 480 minutes (47% of total).
+2. **Machine that broke most often there :** LaserWelder, 480 minutes (100% of the site's downtime).
 
 ## 7. My Recommendations
 
-1. **Investigate Seiko's LaserWelders first.** Review maintenance logs, machine age, operating conditions, and operator procedures. This is the only biggest source of downtime at the single worst site, and it addresses **47%** of total recorded downtime.
-2. **Benchmark Seiko against the other three sites.** LaserWelders at the other sites recorded 0 minutes, so working practices that prevent downtime may already exist inside the company. This allows a faster fix by reusing internal best practice.
-3. **Investigate LaserCutter downtime, starting with Shenzhen.** LaserCutter accounts for 430 min (42%). [VERIFY: click the Shenzhen bar and confirm which machine drives its 420 minutes, then update this line.] Together with LaserWelder, this addresses **88%** of downtime.
-4. **Set up ongoing monitoring of the top two machine types.** Track downtime per machine type per site on a recurring dashboard, which turns a one-time analysis into an early-warning view to analyze their performance.
+1. **Investigate Seiko's LaserWelders first :** Review maintenance logs, machine age, operating conditions, and operator procedures. This is the only biggest source of downtime at the single worst site, and it addresses **47%** of total recorded downtime.
+2. **Benchmark Seiko against the other three sites :** LaserWelders at the other sites recorded 0 minutes, so working practices that prevent downtime may already exist inside the company. This allows a faster fix by reusing internal best practice.
+3. **Investigate LaserCutter downtime, starting with Shenzhen :** LaserCutter accounts for 430 min (42%). [VERIFY: click the Shenzhen bar and confirm which machine drives its 420 minutes, then update this line.] Together with LaserWelder, this addresses **88%** of downtime.
+4. **Set up ongoing monitoring of the top two machine types :** Track downtime per machine type per site on a recurring dashboard, which turns a one-time analysis into an early-warning view to analyze their performance.
 5. **Deprioritize low-impact machines.** MetalPress and AirWrench show 0 minutes, and SpotWelder, ConveyorBelt, and CNC show 10 minutes each, so maintenance effort should go where the downtime is.
 
 ## 8. Assumptions and Limitations
 
-- **Downtime is an estimate.** Each unhealthy message is counted as 10 minutes, based on the 10-minute reporting interval. Real downtime could be shorter or longer.
+- **Downtime is an estimate :** Each unhealthy message is counted as 10 minutes, based on the 10-minute reporting interval. Real downtime could be shorter or longer.
 - **One month of data.** This is a data obtained during a 1 month observation and not seasonal, long-term trends, and recurring patterns type of data.
-- **Descriptive, not causal.** The data shows where and which, and not why. The root-cause conclusions require maintenance records and engineering input.
-- **No predictive model.** This is an exploratory analysis, not a failure-prediction type of project.
+- **Descriptive, not causal :** The data shows where and which, and not why. The root-cause conclusions require maintenance records and engineering input.
+- **No predictive model :** This is an exploratory analysis, not a failure-prediction type of project.
 - **Simulated client.** The data comes from a job simulation, so conclusions illustrate method rather than real factory or manufacturing operations.
 
 ## 9. Next Steps for Improvements
