@@ -269,13 +269,8 @@ Daikibo-Machine-Health-Failure-Hotspot-Analysis/
 
 ## 12. How to Explore This Project
 
-**Option A: Explore Online**
-Open the [Tableau Public dashboard](YOUR_TABLEAU_PUBLIC_LINK) and click a factory bar to filter the machine chart.
-
-**Option B: Locally**
-1. Download `tableau/Daikibo_Machine_Health_Analytics.twbx`.
-2. Open it in Tableau Desktop or Tableau Public.
-3. Click the **Seiko** bar on the factory chart to reproduce the drill-down.
+**Explore Online**
+Open the [Tableau Public dashboard](https://public.tableau.com/views/DaikiboMachineHealthFailureHotspotAnalysis/DashboardSidebySide) and click a factory bar to filter the machine chart.
 
 ## 13. Acknowledgements
 
