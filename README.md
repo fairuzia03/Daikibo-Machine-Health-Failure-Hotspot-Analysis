@@ -249,10 +249,6 @@ In the future, if I extended this project, I would do these steps, such as :
 
 ```
 Daikibo-Machine-Health-Failure-Hotspot-Analysis/
-├── README.md
-├── LICENSE
-├── tableau/
-│   └── Daikibo_Machine_Health_Analytics.twbx
 ├── images/
 │   ├── 01-dashboard-final.png
 │   ├── 02-dashboard-before.png
@@ -263,13 +259,13 @@ Daikibo-Machine-Health-Failure-Hotspot-Analysis/
 │   ├── 07-sheet-downtime-per-machine.png
 │   ├── 08-dashboard-action-filter.png
 │   └── 09-seiko-selected-drilldown.png
-└── data/
+└── Project Description & Dashboard Link/
     └── README.md
 ```
 
 ## 12. How to Explore This Project
 
-**Explore Online**
+**Explore Online :**
 Open the [Tableau Public dashboard](https://public.tableau.com/views/DaikiboMachineHealthFailureHotspotAnalysis/DashboardSidebySide) and click a factory bar to filter the machine chart.
 
 ## 13. Acknowledgements
